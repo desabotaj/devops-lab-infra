@@ -2,3 +2,4 @@
 
 Infrastructure repo for studying
 #Monitoring placeholder
+## CI Status badge placeholder
