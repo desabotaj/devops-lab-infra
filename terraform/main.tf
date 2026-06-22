@@ -1,10 +1,14 @@
-# placeholder - Terraform will be in coming modules
 terraform {
 required_version = ">= 1.0"
 }
 
 variable "enviroment" {
-description = "dev or prod"
-type = string
+type = "string"
 default = "dev"
+}
+
+variable "instance_type" {
+description = "EC2 instance size"
+type = "string"
+default = "t3.micro"
 }
