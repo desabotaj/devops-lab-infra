@@ -2,3 +2,9 @@
 terraform {
 required_version = ">= 1.0"
 }
+
+variable "enviroment" {
+description = "dev or prod"
+type = string
+default = "dev"
+}
