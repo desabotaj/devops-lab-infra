@@ -1,1 +1,2 @@
 flow: git-flow
+version 1.0.0
