@@ -18,3 +18,21 @@
 
 #Logs
 *.log
+
+# Kubernetes
+kubeconfig
+*.kubeconfig
+
+#Ansible
+*.retry
+
+#Helm
+charts/*.tgz
+
+#Python automation (future modules)
+__pycache__/
+.venv/
+*.pyc
+
+#CI local
+.act/
