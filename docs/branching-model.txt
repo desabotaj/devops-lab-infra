@@ -1,3 +1,6 @@
 flow: git-flow
+<<<<<<< HEAD
 version 1.0.0
 Branching: trunk-based - short branches, frequent merge to main
+=======
+>>>>>>> 62726e0 (docs: note git-flow branching model)
