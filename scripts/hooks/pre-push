@@ -1,0 +1,10 @@
+#!/bin/bash
+# Block accidental push directly to main from this lab machine
+while read local_ref local_sha remote_ref remote_sha; do
+if [[ "${remote_ref}" == "refs/heads/main" && "${local_ref}" != "${remote_ref}" ]]; then
+  if git rev-list --count origin/main..main 2>/dev/null | grep -qv '^0$'; then
+    echo "WARN: pushing to main - ensure this goes through PR in prod teams"
+  fi
+fi
+done
+exit 0
