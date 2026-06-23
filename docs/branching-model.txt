@@ -1,2 +1,3 @@
 flow: git-flow
 version 1.0.0
+Branching: trunk-based - short branches, frequent merge to main
