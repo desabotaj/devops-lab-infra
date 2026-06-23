@@ -12,3 +12,12 @@ description = "EC2 instance size"
 type = "string"
 default = "t3.small"
 }
+
+variable "project_tags" {
+  description = "Common resource tags"
+  type        = map(string)
+  default = {
+    Project = "devops-lab"
+    Managed = "terraform"
+}
+}
