@@ -1,0 +1,4 @@
+---
+- name: Ensure common packages
+  debug:
+    msg: "common role placeholder"
