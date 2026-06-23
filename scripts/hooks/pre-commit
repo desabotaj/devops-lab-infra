@@ -1,0 +1,12 @@
+#!/bin/bash
+set -euo pipefail
+
+BLOCKED_PATTERNS='\.tfstate|\.env$|\.pem$|secrets/'
+
+if git diff --cached --name-only | grep -E "$BLOCKED_PATTERNS"; then
+echo "ERROR: attempt to commit forbidden files (tfstate, .env, pem, secrets/)"
+echo "Remove from staging: git reset HEAD <file>"
+exit 1
+fi
+
+exit 0
