@@ -1,0 +1,11 @@
+# Trunk vs GitFlow (lab summary)
+
+| Criteria | Git Flow | Trunk |
+| -------- | -------- | ----- |
+| Main branches | main + develop | main |
+| Feature LT | days-weeks | hours-1-2days |
+| Release | release/* branches | tag on main |
+| DevOps IaC | unusual | often |
+| Hooks | pre-commit secrets | same | 
+
+Recomendation: trunk + PR + CI on main.
