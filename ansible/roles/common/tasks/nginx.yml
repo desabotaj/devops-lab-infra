@@ -1,0 +1,4 @@
+---
+- name: Install nginx
+  debug:
+    msg: "nginx task placeholder"
